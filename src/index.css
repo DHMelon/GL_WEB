@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Faktos';
+  src: url('./assets/Faktos.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BCKR';
+  src: url('./assets/Becker Gothic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'VCR';
+  src: url('./assets/VCR.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'BCKR', system-ui, -apple-system, sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ===== Scroll reveal ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }

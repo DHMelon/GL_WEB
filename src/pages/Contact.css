@@ -1,0 +1,113 @@
+.contact-section {
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 80px;
+}
+
+.contact-title {
+  font-size: 72px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 16px;
+  text-shadow:
+    4px -4px 0px #800080,
+    8px -8px 0px #501b4d;
+}
+
+.contact-subtitle {
+  font-family: 'Faktos', sans-serif;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0 0 60px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-label {
+  font-family: 'VCR', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(200, 100, 255, 0.65);
+}
+
+.contact-input {
+  background: rgba(128, 0, 128, 0.05);
+  border: 1px solid rgba(128, 0, 128, 0.35);
+  color: #fff;
+  font-family: 'Faktos', sans-serif;
+  font-size: 16px;
+  padding: 14px 18px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  resize: none;
+}
+
+.contact-input:focus {
+  border-color: rgba(128, 0, 128, 0.7);
+  box-shadow: 0 0 12px rgba(128, 0, 128, 0.2);
+}
+
+.contact-textarea {
+  min-height: 160px;
+}
+
+.contact-submit {
+  align-self: center;
+  padding: 16px 52px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(128, 0, 128, 0.15);
+  border: 1px solid rgba(128, 0, 128, 0.6);
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-submit:hover:not(:disabled) {
+  background: rgba(128, 0, 128, 0.3);
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.3);
+}
+
+.contact-submit:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.contact-success {
+  font-family: 'Faktos', sans-serif;
+  font-size: 20px;
+  color: rgba(200, 100, 255, 0.8);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.contact-error {
+  font-family: 'Faktos', sans-serif;
+  font-size: 15px;
+  color: rgba(255, 80, 80, 0.8);
+  margin: 0;
+}

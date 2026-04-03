@@ -1,0 +1,238 @@
+.vm-page {
+  min-height: 100vh;
+  background: #0a0008;
+  color: #fff;
+}
+
+/* Hero */
+.vm-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.vm-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.vm-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.vm-title {
+  font-size: 100px;
+  color: #fff;
+  margin: 0;
+  text-shadow:
+    4px -4px 0px #800080,
+    8px -8px 0px #501b4d;
+}
+
+.vm-tagline {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 18px;
+}
+
+.vm-steam-btn {
+  display: inline-block;
+  padding: 16px 48px;
+  font-family: 'BCKR', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid rgba(128, 0, 128, 0.8);
+  background: rgba(128, 0, 128, 0.15);
+  box-shadow: 0 0 16px rgba(128, 0, 128, 0.3);
+  transition: all 0.3s ease;
+}
+
+.vm-steam-btn:hover {
+  background: rgba(128, 0, 128, 0.35);
+  box-shadow: 0 0 32px rgba(128, 0, 128, 0.5);
+}
+
+/* Sections */
+.vm-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.vm-section {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(128, 0, 128, 0.35);
+}
+
+.vm-section-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.vm-section-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.vm-section-captioned .vm-section-inner {
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.vm-section-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vm-section-text {
+  align-items: center;
+  text-align: center;
+}
+
+.vm-section-text-centered {
+  align-items: center;
+  text-align: center;
+}
+
+.vm-section-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.vm-section-row .vm-section-inner {
+  flex: 1;
+  max-width: none;
+}
+
+.vm-section-inner-betrayal {
+  flex-direction: column;
+}
+
+.vm-section-heading {
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow:
+    3px -3px 0px #800080,
+    6px -6px 0px #501b4d;
+}
+
+.vm-section-body {
+  font-family: 'Faktos', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  text-shadow:
+    2px -2px 0px rgba(128, 0, 128, 0.4),
+    4px -4px 0px rgba(80, 27, 77, 0.25);
+}
+
+
+.vm-section-img {
+  width: 100%;
+  max-width: 580px;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border: 2px solid rgba(128, 0, 128, 0.5);
+  box-shadow: 0 0 16px rgba(128, 0, 128, 0.2);
+}
+
+/* Enemy captions */
+.vm-captions {
+  display: flex;
+  gap: 20px;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.vm-section-captioned .vm-caption-card {
+  flex: 0 0 340px;
+}
+
+.vm-captions-wide .vm-caption-card {
+  flex: 0 0 540px;
+}
+
+.vm-captions-wide .vm-caption-img {
+  aspect-ratio: unset;
+  height: auto;
+  object-fit: contain;
+}
+
+.vm-caption-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vm-caption-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border: 2px solid rgba(128, 0, 128, 0.5);
+  box-shadow: 0 0 16px rgba(128, 0, 128, 0.2);
+}
+
+.vm-caption-img-placeholder {
+  background: rgba(128, 0, 128, 0.05);
+}
+
+.vm-caption-text {
+  font-family: 'Faktos', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .vm-title { font-size: 48px; }
+  .vm-section-inner { padding: 60px 24px; }
+  .vm-section-row { flex-direction: column; }
+  .vm-section-row .vm-section-inner { flex: none; width: 100%; }
+  .vm-section-inner-betrayal { padding-top: 0; padding-bottom: 60px; }
+  .vm-section-img { width: 100%; height: auto; }
+  .vm-captions { flex-direction: column; gap: 32px; }
+  .vm-section-captioned .vm-caption-card,
+  .vm-captions-wide .vm-caption-card { flex: none; width: 100%; }
+}
